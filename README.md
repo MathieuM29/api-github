@@ -1,2 +1,2 @@
 # api-github
-A react project who use github API
+A react and react-redux project who use github API
