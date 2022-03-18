@@ -1,0 +1,11 @@
+@use 'src/styles/vars' as v;
+
+.loader {
+
+  text-align: center;
+
+  &--text {
+
+    font-size: 1.5em;
+  }
+}

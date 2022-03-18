@@ -10,7 +10,7 @@
 
 .app {
 
-  height: 100vh;
+  height: 100%;
   width: 70vw;
   background-color: v.$appBackground;
   @include flex($direction: column, $justify: space-evenly, $align: center);

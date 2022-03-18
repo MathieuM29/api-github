@@ -13,7 +13,7 @@ body {
   
   font-family: sans-serif;
   background-color: v.$globalBackground;
-  height: 100vh;
+  height: 100%;
   // width: 100vw;
   @include flex($direction: row, $justify: center, $align: center);
 
