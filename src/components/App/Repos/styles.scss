@@ -1,0 +1,27 @@
+@use 'src/styles/vars' as v;
+
+@mixin flex($direction, $justify, $align) {
+
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+.repos {
+
+  width: 95%;
+  // height: 90%;
+  background-color: v.$componentsBackground;
+  padding: 1.1em;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border: 1px solid v.$globalBackground;
+  // margin-top: 15px;
+  // margin-bottom: 15px;
+  @include flex($direction: row, $justify: space-evenly, $align: center);
+  flex-wrap: wrap;
+
+
+  
+}

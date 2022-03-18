@@ -1,0 +1,16 @@
+@use 'src/styles/vars' as v;
+
+.message {
+
+  width: 95%;
+  background-color: v.$componentsBackground;
+  padding: 1.3em;
+  border-radius: 5px;
+  border: 1px solid v.$globalBackground;
+  // margin-top: 15px;
+  // margin-bottom: 15px;
+
+
+
+  
+}

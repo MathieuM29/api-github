@@ -1,0 +1,67 @@
+@use 'src/styles/vars' as v;
+
+@mixin flex($direction, $justify, $align) {
+
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+.repo {
+
+  min-width: 30%;
+  max-width: 30%;
+  min-height: 500px;
+  max-height: 500px;
+  border: 1px solid v.$globalBackground;
+  @include flex($direction: column, $justify: flex-start, $align: flex-start);
+  margin-bottom: 30px;
+  border-radius: 5px;
+
+  &__picture {
+
+    height: 300px;
+    width: 100%;
+    @include flex($direction: row, $justify: center, $align: center);
+    // border: 1px solid v.$globalBackground;
+    background-color: v.$appBackground;
+
+    &--img {
+
+      max-width: 100%;
+    }
+  }
+
+  &__infos {
+
+    height: 200px;
+    width: 100%;
+    // border: 1px solid v.$globalBackground;
+    padding: 1.1em;
+    @include flex($direction: column, $justify: space-evenly, $align: flex-start);
+
+    &--title {
+
+      font-size: calc(v.$textSize * 1.4);
+      font-weight: bold;
+
+    }
+
+    &--subtitle {
+
+      color: v.$globalBackground;
+      font-size: calc(v.$textSize * 1.2);
+      margin-top: -10px;
+    }
+
+    &--desc {
+
+      line-height: 1.4em;
+    }
+  }
+
+
+
+  
+}

@@ -1,0 +1,29 @@
+@use 'src/styles/vars' as v;
+
+.search {
+
+  width: 95%;
+  background-color: v.$componentsBackground;
+  padding: 1.3em;
+  border-radius: 5px;
+  border: 1px solid v.$globalBackground;
+
+  &--input {
+
+    width: 100%;
+    padding:  1.3em 1.3em 1.3em 3em;
+    border-radius: 5px;
+    border: 1px solid v.$globalBackground;
+    position: relative;
+  }
+
+  &--icon {
+
+    width: 20px;
+    position: absolute;
+    top: 156px;
+    left: 356px;
+  }
+
+  
+}
