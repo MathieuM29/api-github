@@ -1,6 +1,19 @@
-import { combineReducers } from 'redux';
-import counter from './counter';
+import {
 
-export default combineReducers({
-  counter,
-});
+
+} from '../actions';
+
+const stateInital = {
+
+
+};
+
+export default (state = stateInital, action = {}) => {
+
+  switch (action.type) {
+
+  
+  }
+
+
+};
