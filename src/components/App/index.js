@@ -18,14 +18,14 @@ const App = () => {
   useEffect(() => {
     const actionLoading = loading();
     dispatch(actionLoading);
-    console.log(isLoading);
+    // console.log(isLoading);
 
     setTimeout(() => {
       const actionLoadingTime = loading();
       dispatch(actionLoadingTime);
-    }, 1500);
-
+    }, 1000);
   }, []);
+
 
   return (
   <div className="app">
@@ -36,8 +36,7 @@ const App = () => {
     <Message />
     <Repos />
       </>
-    )}
-    
+    )}  
     {isLoading && <Loader />}
   </div>
   )
