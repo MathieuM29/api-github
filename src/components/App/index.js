@@ -1,7 +1,7 @@
 // == Import
 import { useSelector, useDispatch } from 'react-redux';
 import { useEffect } from 'react';
-import { loading } from 'src/actions';
+import { loading, fetchDatas } from 'src/actions';
 import './styles.scss';
 import Header from './Header';
 import Search from './Search';
@@ -19,13 +19,13 @@ const App = () => {
     const actionLoading = loading();
     dispatch(actionLoading);
     // console.log(isLoading);
+    dispatch(fetchDatas());
 
     setTimeout(() => {
       const actionLoadingTime = loading();
       dispatch(actionLoadingTime);
     }, 1000);
   }, []);
-
 
   return (
   <div className="app">

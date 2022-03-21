@@ -5,11 +5,11 @@ import './styles.scss';
 // == Composant
 const Message = () => {
 
-  const {search, repos} = useSelector((state) => state);
+  const {search, repos, totalCount} = useSelector((state) => state);
 
   return (
   <div className="message">
-    <p className="message--text">La recherche {search} a donné {repos.length} résultats</p>
+    <p className="message--text">La recherche {search} a donné {totalCount} résultats</p>
   </div>
   )
 };

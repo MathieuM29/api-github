@@ -21,7 +21,7 @@ const Search = () => {
  const handleSubmit = (e) => {
 
   e.preventDefault();
-  dispatch(fetchDatas());
+  // dispatch(fetchDatas());
  };
 
   return (
